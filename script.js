@@ -96,7 +96,7 @@ function addNewItem(e) {
 // delete an item
 function deleteItem(e) {
   if (e.target.className === "fas fa-times") {
-    if (confirm("are you sure")) {
+    if (confirm("Görev silinsin mi ?")) {
       e.target.parentElement.parentElement.remove();
 
       // delete item from LS
@@ -108,7 +108,7 @@ function deleteItem(e) {
 
 // delete all items
 function deleteAllItems(e) {
-    if(confirm('Are you sure ?')){
+    if(confirm('Görevler silinsin mi ?')){
     while(taskList.firstChild){
         taskList.removeChild(taskList.firstChild);
     }
